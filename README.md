@@ -21,18 +21,7 @@ It's okay for this application to look very basic, though this is up to you. For
 ![An individual post](./post.png)
 **NOTE**: The post files are in Markdown format, but they should render in the browser as html.
 
-## The Server
-* The `/assets/posts` folder contains text files with blog data in them. The file name is the URL slug.
-* The content of each file will be in the following format
-	```
-	===
-	Title: Blog Title
-	Author: Author Name
-	Slug: same-as-filename
-	===
-	# Markdown content will live here
-	This is some markdown paragraph text
-	```
+## The Application Functionality
 * Create two routes:
    * `/posts` - this should present a list of all the post titles. Each title should be a link, and clicking on it should should navigate to the specific post page.
    * `/posts/<slug>` - this should return a specific blog post, including a list of the five most commonly used words in the article, excluding stop-words, as 'tags'.
@@ -50,3 +39,16 @@ E.g. the array should have the structure as below.
   }
 ]
 ```
+
+Note:
+* The `/assets/posts` folder contains text files with blog data in them. The file name is the URL slug.
+* The content of each file will be in the following format
+	```
+	===
+	Title: Blog Title
+	Author: Author Name
+	Slug: same-as-filename
+	===
+	# Markdown content will live here
+	This is some markdown paragraph text
+	```
